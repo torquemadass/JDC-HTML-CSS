@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>YouTube</title>
+    <script async src="home.js"></script>
 </head>
 <body>
     <div class="min-h-screen min-w-screen bg-black text-white">
@@ -44,29 +45,29 @@
                 <button class="bg-white rounded-full text-black py-1 px-3">All</button>
                 <button class="bg-[#303030] rounded-full py-1 px-3 border-solid border-2 border-[#AAAAAA]">Item</button>
             </div>
-          <div class="flex gap-y-16 gap-x-4 flex-wrap p-5">
-            <a href="https://youtube.com">
-                <div class="flex flex-col gap-3 w-72">
+          <div class="flex gap-y-16 gap-x-4 flex-wrap p-5" video-card="container">
+                <div class="flex flex-col gap-3 w-72" video-card="card">
                     <div class="relative">
-                        <img src="assets/Placeholder Thumbnail.png" alt="Thumbnail" class="w-full">
-                        <div class="bg-black px-2 py-1 absolute bottom-1 right-1">
-                            <p>23:45</p>
-                        </div>
+                        <a video-card="image-link">
+                            <img src="assets/Placeholder Thumbnail.png" alt="Thumbnail" class="w-full" video-card="image">
+                            <div class="bg-black px-2 py-1 absolute bottom-1 right-1">
+                                <p>23:45</p>
+                            </div>
+                        </a>
                     </div>
                     <div class="flex gap-3">
-                        <div>
-                            <img src="assets/User-Avatar.png" alt="Tony" class="w-14 rounded-full">
-                        </div>
-                        <div>
-                            <p class="font-bold">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                        <a video-card="creator-link">
+                            <img src="assets/User-Avatar.png" alt="Tony" class="max-w-14 rounded-full">
+                        </a>
+                        <a video-card="content-link">
+                            <p class="font-bold" video-card="title">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                             <div class="mt-2">
-                                <p class="text-sm text-[#AAAAAA]">James Gouse</p>
+                                <p class="text-sm text-[#AAAAAA]" video-card="creator">James Gouse</p>
                                 <p class="text-sm text-[#AAAAAA]">15K Views. <span>1 Week Ago</span></p>
                             </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
-            </a>
           </div>  
         </div>
     </div>
